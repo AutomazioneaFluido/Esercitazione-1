@@ -1,0 +1,148 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[italian,english]{babel}
+\usepackage{amssymb,latexsym,amsfonts,amsmath}
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage {pdfpages}
+
+\begin{document}
+
+
+\title{Esercitazione 1}
+\date{April 5 , 2017}
+\maketitle
+
+
+\author{Alessio Susco \hspace*{2cm} Nicola Bomba \hspace*{2cm} Fabrizio Ursini  \\  \hspace*{1,85cm} Alessandra Di Martino \hspace*{1,25cm} Diego Guzman}
+
+\includepdf[pages={1,2,3},pagecommand={\thispagestyle{plain}}]{eserc1.pdf} 
+
+\tableofcontents
+
+\clearpage
+
+\section{Introduzione Generale}
+Questa esercitazione si struttura in 2 parti.
+Lo scopo della prima parte di questa esercitazione è quello di determinare le forze di aderenza in due diversi cilindri pneumatici variando la pressione nella camera anteriore p2, e eseguendo le misure della pressione p1 nella camera posteriore all'inizio del moto del pistone con lubrificazione preliminare (10 corse preliminari del pistone) e senza.
+Nella seconda parte bisogna effettuare delle prove di regolazione della velocità dell'attuatore utilizzando una valvola bistabile 4/2 a comando pneumatico, secondo tre differenti schemi:
+
+\begin{enumerate}
+\item Regolazione con resistenza all'alimentazione (schema 3);
+\item Regolazione con resistenza allo scarico (schema 4);
+\item Regolazione con valvola di scarico rapido (schema 5).
+\end{enumerate}
+
+\section{Strumenti Utilizzati}
+
+\subsection{Esercizio 1}
+\subsubsection{Schema 1}
+\begin{itemize}
+\item Calibro;
+\item Cilindro pneumatico x2;
+\item Manometro metallico x2;
+\item Tubi in poliuretano;
+\item Alimentazione.
+\end{itemize}
+
+\subsubsection{Schema 2}
+\begin{itemize}
+\item Cilindro pneumatico x2;
+\item Valvola bistabile 4/2 a comando pneumatico;
+\item Valvola 3/2 con comando a pulsante x2;
+\item Tubi in poliuretano;
+\item Alimentazione.
+\end{itemize}
+
+\subsection{Esercizio 2}
+\subsubsection{Schema 3 e 4}
+\begin{itemize}
+\item Cilindro pneumatico;
+\item Valvola bistabile 4/2 a comando pneumatico;
+\item Valvola monostabile a pulsante x2;
+\item Strozzatore unidirezionale;
+\item Tubi in poliuretano;
+\item Alimentazione.
+\end{itemize}
+
+
+\subsubsection{Schema 5}
+\begin{itemize}
+\item Cilindro pneumatico;
+\item Valvola bistabile 4/2 a comando pneumatico;
+\item Valvola monostabile a pulsante x2;
+\item Valvola di scarico rapido;
+\item Tubi in poliuretano;
+\item Alimentazione.
+\end{itemize}
+
+\section{Osservazione Preliminare}
+\subsection{Esercizio 1}
+Prima di iniziare la prova, smontiamo i cilindri per misurare le aree $S_1$ (superficie posteriore dello stantuffo), $S_2$ (superficie anteriore dello stantuffo) e $A$ (alesaggio). Si devono eseguire le misure di $P_1$, pressione della camera posteriore dei cilindri affinché vi sia spostamento dell'asta corrispondente all'inizio del moto, variando la pressione $P_2$ della camera anteriore, per valori rispettivamente di 0,1,2,3 bar, partendo dalla posizione retratta del cilindro. È necessario registrare 3 valori di $P_1$ per ogni $P_2$ assegnata, nel caso di corse preliminari del pistone e nel caso di cilindro non lubrificato. Ottenuti i dati necessari, costruiamo una tabella dove riportiamo i valori delle pressioni $P_1$ e $P_2$ e della forza di aderenza $F$ calcolata usando la formula:
+\begin{equation}
+F=P_1 S_1-P_2 S_2
+\end{equation}
+Infine colleghiamo un dinamometro all'asta e azioniamo il moto senza utilizzare l'aria compressa nelle due camere del cilindro, e confrontiamo i dati ottenuti.
+
+\subsection{Esercizio 2}
+Per la seconda prova costruiamo 3 circuiti, rappresentati successivamente. Secondo lo schema 3, colleghiamo il pistone a una valvola bistabile 4/2 a comando pneumatico, e a due valvole 3/2 con comando a pulsante. L'obiettivo della prova è studiare l'andamento della velocità con resistenza all'alimentatore, quindi posizioniamo uno strozzatore unidirezionale alla camera posteriore del cilindro. 
+Nello schema 4, costruiamo un circuito analogo, ma spostiamo lo strozzatore in un'altra posizione, ovvero collegandolo alla camera anteriore del cilindro, il quale limiterà il flusso d'aria in uscita, e osserviamo il comportamento dello stantuffo con particolare attenzione al fenomeno dello stick slip.
+L'ultimo schema, il numero 5, prevede l'utilizzo di una valvola di scarico rapido. In questa configurazione, osserviamo che il pistone rientra con una velocità massima. Ciò avviene perché l'aria che esce incontra la minima resistenza possibile permessa dalle tipologie di circuiti studiate.
+
+\section{Schema Circuito}
+
+\subsection{Schema Esercizio 1}
+\begin{center}
+\includegraphics[scale=0.6]{Schema1.png}
+\end{center}
+
+\subsection{Schema Esercizio 2}
+\begin{center}
+\includegraphics[scale=0.6]{Schema2.png}
+\end{center}
+
+\subsection{Schema Esercizio 3}
+\begin{center}
+\includegraphics[scale=0.6]{Schema3.png}
+\end{center}
+
+\subsection{Schema Esercizio 4}
+\begin{center}
+\includegraphics[scale=0.6]{Schema4.png}
+\end{center}
+
+\subsection{Schema Esercizio 5}
+\begin{center}
+\includegraphics[scale=0.6]{Schema5.png}
+\end{center}
+
+\section{Calcoli}
+\dots
+
+
+
+
+\section{Conclusioni}
+\subsection{Conclusioni Esercizio 1}
+\subsubsection{Schema 1}
+Raccolte le varie misurazioni sul cilindro e effettuate le varie prove sulla fuoriuscita dello stelo dell’attuatore con differenti valori di pressione andiamo ad analizzare tutto il complesso di dati a nostra disposizione.
+In questa prima esercitazione possiamo affermare che, introducendo una pressione $P_1$ in un attuatore in modo da garantire l’uscita dello stelo e contrapponendo una pressione $P_2$ nella camera opposta a quella di $P_1$ e, rimanendo sempre nella stessa configurazione di montaggio per ogni volta che cambiamo $P_2$, la pressione $P_1$ di spunto per avviare la fuoriuscita dell’attuatore varia in base alla $P_2$ presente che si va a contrapporre al moto generato da $P_1$. 
+Quando introduciamo $P_1$ andiamo ad agire sullo stantuffo interno del nostro cilindro su cui, esattamente dalla parte opposta, agisce anche una pressione $P_2$ che si contrappone al moto che P1 genera. 
+
+\subsubsection{Schema 2}
+Il montaggio dello schema 2 ci permette di controllare in modo indiretto il nostro attuatore, pilotando una valvola bistabile con dei segnali di pressione provenienti da 2 pulsanti, così facendo si differenziano le pressioni di segnale (che hanno solo lo scopo di pilotare altri organi) e le pressioni di portata che vanno ad alimentare il nostro attuatore.
+
+\subsection{Conclusioni Esercizio 2}
+\subsubsection{Schema 3 e 4}
+Usiamo per lo schema 3 lo stesso impianto costruito nello schema 2 \\
+ma con l’aggiunta di un regolatore con resistenza nell’ingresso di alimentazione dell’attuatore.
+Effettuando vari test su questa configurazione (aumentando e diminuendo la resistenza dello strozzatore) si cerca di raggiungere la velocità minima di fuoriuscita e di rientro dello stelo.
+Raggiunta la velocità minima di fuoriuscita e di rientro notiamo che si viene a creare un fenomeno di stick slip che fa avanzare lo stelo a scatti e non in maniera fluida.
+Un fattore molto importate che si nota con questo tipo di esercitazione è che se si deve effettuare una regolazione della velocità di fuoriuscita o rientro dello stello, è assolutamente necessario inserire la resistenza in scarico e non in alimentazione per non generare un effetto di stick slip che, in caso contrario, si andrebbe a generare ponendo la resistenza in alimentazione. Questo perché passando per la resistenza la nostra pressione spinge lo stantuffo e, così facendo, crea un volume maggiore che deve ogni istante riempire per poter spingere di nuovo lo stantuffo. In questo processo la resistenza impedisce il riformarsi istantaneamente della giusta pressione nella camera con il nuovo volume quindi va a creare il suddetto fenomeno.
+
+\subsubsection{Schema 5}
+Nello schema 5 andiamo ad utilizzare una valvola di scarico che ci permette, se posizionata in modo opportuno, di mandare in scarico rapido una delle due fasi, cioè o quella di uscita dello stelo o quella di rientro.
+Questo sistema viene utilizzato per la necessità di avere una valvola di scarico vicina all’attuatore, in modo tale da non scaricare da un punto di sfogo troppo lontano e di conseguenza risentire della resistenza generata da una tubazione troppo lunga. Con questo semplice accorgimento andiamo ad eliminare la resistenza generata dalla tubazione e quindi garantiamo con assoluta certezza, la massima velocità di rientro o uscita del nostro stelo.
+\end{document}
